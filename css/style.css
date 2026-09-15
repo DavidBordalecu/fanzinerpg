@@ -309,6 +309,8 @@ body {
 
 /* ---------- Manual (fanzine de reglas) ---------- */
 
+.manual-panel[hidden] { display: none; }
+
 .manual-panel {
   position: absolute;
   top: 0; right: 0; bottom: 0;
