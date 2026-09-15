@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fanzines de Bolsillo — Juegos de Rol Unipersonales</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="mesa-page">
+
+  <header class="mesa-header">
+    <h1>Fanzines de Bolsillo</h1>
+    <p class="tagline">Juegos de rol unipersonales · Saca una revista de la mesa y empieza tu aventura</p>
+  </header>
+
+  <main class="mesa" aria-label="Mesa con cuatro fanzines de rol">
+    <div class="mesa-superficie">
+
+      <!-- Fanzine 1 · Fantasy -->
+      <article class="fanzine f1" data-juego="torre" tabindex="0">
+        <div class="fanzine-cuerpo">
+          <div class="fanzine-portada">
+            <svg viewBox="0 0 300 420" role="img" aria-label="Portada del fanzine La Torre del Archimago">
+              <defs>
+                <linearGradient id="f1fondo" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#2b1a3d"/>
+                  <stop offset="1" stop-color="#12061f"/>
+                </linearGradient>
+                <radialGradient id="f1luna" cx="0.72" cy="0.22" r="0.16">
+                  <stop offset="0" stop-color="#ffe9a8"/>
+                  <stop offset="1" stop-color="#d9a441"/>
+                </radialGradient>
+              </defs>
+              <rect width="300" height="420" fill="url(#f1fondo)"/>
+              <circle cx="216" cy="92" r="42" fill="url(#f1luna)"/>
+              <path d="M150 360 L60 250 L60 120 L150 60 L240 120 L240 250 Z" fill="#1a0f2e" stroke="#a35ce6" stroke-width="3"/>
+              <path d="M150 330 L85 245 L85 140 L150 92 L215 140 L215 245 Z" fill="none" stroke="#5c2d8f" stroke-width="2"/>
+              <rect x="74" y="230" width="152" height="8" fill="#a35ce6"/>
+              <path d="M150 245 L150 330" stroke="#a35ce6" stroke-width="3"/>
+              <circle cx="150" cy="285" r="9" fill="#ffe9a8"/>
+              <rect x="46" y="380" width="208" height="4" fill="#5c2d8f"/>
+              <text x="150" y="52" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="bold" letter-spacing="2" fill="#e8d9ff">FANZINE N.º 1</text>
+              <text x="150" y="404" text-anchor="middle" font-family="Georgia, serif" font-size="11" letter-spacing="3" fill="#c9aef0">EDICIONES TINTERO Y DRAGO</text>
+            </svg>
+          </div>
+          <div class="fanzine-tapa">
+            <h2>La Torre<br>del Archimago</h2>
+            <p>Fantasía · Jugador único</p>
+            <span class="cinta">Abreme</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Fanzine 2 · Sci-Fi -->
+      <article class="fanzine f2" data-juego="vorago" tabindex="0">
+        <div class="fanzine-cuerpo">
+          <div class="fanzine-portada">
+            <svg viewBox="0 0 300 420" role="img" aria-label="Portada del fanzine Vorago">
+              <defs>
+                <linearGradient id="f2fondo" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#06121f"/>
+                  <stop offset="1" stop-color="#02030a"/>
+                </linearGradient>
+              </defs>
+              <rect width="300" height="420" fill="url(#f2fondo)"/>
+              <g stroke="#2be6ff" stroke-width="1.5" fill="none" opacity="0.55">
+                <circle cx="150" cy="150" r="60"/>
+                <circle cx="150" cy="150" r="78"/>
+                <circle cx="150" cy="150" r="96"/>
+                <path d="M150 54 A96 96 0 0 1 246 150" stroke-dasharray="4 6"/>
+                <path d="M150 246 A96 96 0 0 1 54 150" stroke-dasharray="4 6"/>
+                <line x1="150" y1="40" x2="150" y2="260"/>
+                <line x1="36" y1="150" x2="264" y2="150"/>
+              </g>
+              <path d="M150 110 L260 192 L150 290 L40 192 Z" fill="#0a2433" stroke="#2be6ff" stroke-width="2.5"/>
+              <path d="M150 136 L210 178 L150 228 L90 178 Z" fill="#0d5a73" opacity="0.85"/>
+              <circle cx="150" cy="100" r="5" fill="#2be6ff"/>
+              <text x="150" y="52" text-anchor="middle" font-family="courier, monospace" font-size="13" font-weight="bold" letter-spacing="3" fill="#aef4ff">FANZINE N.º 2</text>
+              <text x="150" y="404" text-anchor="middle" font-family="courier, monospace" font-size="10" letter-spacing="3" fill="#66d9ff">EDICIONES TINTERO Y DRAGO</text>
+              <text x="150" y="356" text-anchor="middle" font-family="courier, monospace" font-size="11" letter-spacing="2" fill="#2be6ff">&gt; COMIENZA LA TRANSMISIÓN _</text>
+            </svg>
+          </div>
+          <div class="fanzine-tapa">
+            <h2>Vorágo</h2>
+            <p>Ciencia ficción · Jugador único</p>
+            <span class="cinta">Abreme</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Fanzine 3 · Horror -->
+      <article class="fanzine f3" data-juego="carmin" tabindex="0">
+        <div class="fanzine-cuerpo">
+          <div class="fanzine-portada">
+            <svg viewBox="0 0 300 420" role="img" aria-label="Portada del fanzine La Casa Carmín">
+              <defs>
+                <linearGradient id="f3fondo" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#1a0505"/>
+                  <stop offset="1" stop-color="#050202"/>
+                </linearGradient>
+              </defs>
+              <rect width="300" height="420" fill="url(#f3fondo)"/>
+              <circle cx="150" cy="88" r="40" fill="#c8102e"/>
+              <path d="M150 420 L90 240 L110 150 L150 96 L190 150 L210 240 Z" fill="#240808" stroke="#8b0f22" stroke-width="3"/>
+              <rect x="132" y="250" width="36" height="70" fill="#040101" stroke="#5c0a18" stroke-width="2"/>
+              <path d="M120 210 L180 210 M120 196 L180 196" stroke="#5c0a18" stroke-width="2"/>
+              <path d="M118 96 L182 96" stroke="#8b0f22" stroke-width="2"/>
+              <path d="M60 40 L240 40" stroke="#c8102e" stroke-width="2" opacity="0.6"/>
+              <path d="M70 60 L230 60" stroke="#c8102e" stroke-width="1.5" opacity="0.4"/>
+              <text x="150" y="52" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="bold" letter-spacing="3" fill="#e8a3ad">FANZINE N.º 3</text>
+              <text x="150" y="404" text-anchor="middle" font-family="Georgia, serif" font-size="11" letter-spacing="4" fill="#8b0f22">EDICIONES TINTERO Y DRAGO</text>
+              <text x="150" y="356" text-anchor="middle" font-family="Georgia, serif" font-size="12" letter-spacing="3" fill="#c8102e">NO ABRAS DE NOCHE</text>
+            </svg>
+          </div>
+          <div class="fanzine-tapa">
+            <h2>La Casa Carmín</h2>
+            <p>Terror · Jugador único</p>
+            <span class="cinta">Abreme</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Fanzine 4 · Post-apocalíptico -->
+      <article class="fanzine f4" data-juego="refugio" tabindex="0">
+        <div class="fanzine-cuerpo">
+          <div class="fanzine-portada">
+            <svg viewBox="0 0 300 420" role="img" aria-label="Portada del fanzine Refugio 4">
+              <defs>
+                <linearGradient id="f4fondo" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#3a2a12"/>
+                  <stop offset="1" stop-color="#140d05"/>
+                </linearGradient>
+                <linearGradient id="f4sol" x1="0" y1="1" x2="0" y2="0">
+                  <stop offset="0" stop-color="#d96c2c"/>
+                  <stop offset="1" stop-color="#6b4a10"/>
+                </linearGradient>
+              </defs>
+              <rect width="300" height="420" fill="url(#f4fondo)"/>
+              <circle cx="150" cy="110" r="48" fill="url(#f4sol)"/>
+              <rect x="0" y="300" width="300" height="120" fill="#241708"/>
+              <path d="M0 300 L70 210 L120 300 L190 180 L240 300 L300 230 L300 300 Z" fill="#3a2a12"/>
+              <path d="M0 322 L300 322" stroke="#54401f" stroke-width="2"/>
+              <rect x="96" y="210" width="34" height="26" fill="#14100a" stroke="#54401f" stroke-width="2"/>
+              <text x="150" y="52" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" font-weight="bold" letter-spacing="3" fill="#f0c98a">FANZINE N.º 4</text>
+              <text x="150" y="404" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" letter-spacing="3" fill="#b98a4a">EDICIONES TINTERO Y DRAGO</text>
+              <text x="150" y="356" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" letter-spacing="2" fill="#d96c2c">EL MUNDO TERMINÓ AYER</text>
+            </svg>
+          </div>
+          <div class="fanzine-tapa">
+            <h2>Refugio 4</h2>
+            <p>Post-apocalíptico · Jugador único</p>
+            <span class="cinta">Abreme</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+    <p class="mesa-nota">Elige una revista. Dentro encontrarás las reglas y, debajo, la terminal de la aventura.</p>
+  </main>
+
+  <footer class="mesa-footer">
+    <p>Hecho para una sola persona, una linterna y un té. — Fanzines de Bolsillo, 2026</p>
+  </footer>
+
+  <script src="js/aventuras.js"></script>
+  <script src="js/mesa.js"></script>
+</body>
+</html>

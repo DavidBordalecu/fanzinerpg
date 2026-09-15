@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fanzine — Aventura</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="juego-page">
+
+  <header class="juego-bar">
+    <button id="btn-volver" class="bt" type="button">↩ Mesa</button>
+    <div class="juego-titulo">
+      <h1 id="j-titulo">—</h1>
+      <p id="j-subtitulo"></p>
+    </div>
+    <div class="juego-acciones">
+      <button id="btn-manual" class="bt" type="button">✦ Manual de reglas</button>
+      <button id="btn-reiniciar" class="bt" type="button">↻ Reiniciar</button>
+    </div>
+  </header>
+
+  <main class="juego">
+
+    <section class="escena" aria-label="Imagen de la escena actual">
+      <div class="escena-etiqueta" id="escena-etiqueta">—</div>
+      <div class="escena-imagen" id="escena-imagen"></div>
+      <div class="escena-hud">
+        <span id="hud-turnos">Turnos: 0</span>
+        <span id="hud-inv">Inventario: vacío</span>
+      </div>
+    </section>
+
+    <section class="manual-panel" id="manual-panel" hidden>
+      <div class="manual-cerrado">
+        <button id="btn-cerrar-manual" class="bt" type="button">✕ Cerrar manual</button>
+      </div>
+      <div class="manual" id="manual-contenido"></div>
+    </section>
+
+    <section class="terminal-area">
+      <div class="terminal-cabecera">
+        <span class="punto rojo"></span><span class="punto amarillo"></span><span class="punto verde"></span>
+        <span class="terminal-titulo" id="terminal-titulo">zork://terminal</span>
+      </div>
+      <div class="terminal" id="terminal" aria-live="polite"></div>
+      <form class="terminal-input" id="form-comando" autocomplete="off">
+        <span class="prompt" id="prompt">&gt;</span>
+        <input type="text" id="input-comando" placeholder="escribe un comando… (AYUDA para ver las opciones)" autofocus>
+      </form>
+    </section>
+
+  </main>
+
+  <script src="js/aventuras.js"></script>
+  <script src="js/motor.js"></script>
+  <script src="js/juego.js"></script>
+</body>
+</html>
