@@ -127,6 +127,14 @@
   });
   $("#btn-cerrar-manual").addEventListener("click", () => {
     manualPanel.hidden = true;
+    input.focus();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !manualPanel.hidden) {
+      manualPanel.hidden = true;
+      input.focus();
+    }
   });
 
   /* abre el manual la primera vez para leer las reglas */
